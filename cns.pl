@@ -80,6 +80,6 @@ $ced_hash{$c_chr} += 1;
 foreach my $x (keys %seq_hash) {
 	if (!exists $ced_hash{$x}) {
 		print ">$x\n";
-		print "$seq_hash{$x}\n";
+		print "${$seq_hash{$x}}\n";
 	}
 }
