@@ -14,6 +14,7 @@ use Data::Dumper;
 die("perl $0 in.fasta vcf.tab.pass >out.fasta\n")unless(@ARGV == 2);
 open(FH,"<$ARGV[0]") or die "Cann't open $ARGV[0] $!\n";
 my %seq_hash;
+my %ced_hash;
 
 my $i_seq = Bio::SeqIO->new( -format => 'Fasta', -fh => \*FH|| \*STDIN );
 while((my $seq_obj = $i_seq->next_seq())){
@@ -55,6 +56,7 @@ while (<SNP>) {
 			print ">$c_chr\n";
 			#print "$t_seq\n";
 			print "$c_seq\n";
+			$ced_hash{$c_chr} += 1;
 		}
 #=cut
 		#last tail;
@@ -73,3 +75,11 @@ $c_seq .= substr($t_seq, $c_pos + 1);
 print ">$c_chr\n";
 #print "$t_seq\n";
 print "$c_seq\n";
+$ced_hash{$c_chr} += 1;
+
+foreach my $x (keys %seq_hash) {
+	if (!exists $ced_hash{$x}) {
+		print ">$x\n";
+		print "$seq_hash{$x}\n";
+	}
+}
