@@ -46,7 +46,11 @@ while (<SNP>) {
 			next;
 		}else{
 			$c_seq .= substr($t_seq, $c_pos + 1, $t[1] - 1 - $c_pos - 1 );
-			$c_seq .= $t[4];
+			if ($t[4] =~ /,/) {	# body... # A,T,C 
+				$c_seq .= split(/,/,$t[4])[0];
+			}else{
+				$c_seq .= $t[4]; # change 
+			}
 			$c_pos = $t[1] - 1 + length($t[3]) - 1;
 		}	
 	}else{
@@ -65,7 +69,12 @@ while (<SNP>) {
 		$c_seq = "";
 		$t_seq = ${$seq_hash{$c_chr}};
 		$c_seq .= substr($t_seq, $c_pos, $t[1] - 1 - $c_pos); # $t[1] - 1 site change
-		$c_seq .= $t[4]; # change
+		#$c_seq .= $t[4]; # change
+		if ($t[4] =~ /,/) {	# body... # A,T,C 
+			$c_seq .= split(/,/,$t[4])[0];
+		}else{
+			$c_seq .= $t[4]; # change 
+		} 
 		$c_pos = $t[1] - 1 + length($t[3]) - 1;  # 0-start;
 	}
 }
