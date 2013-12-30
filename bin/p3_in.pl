@@ -4,7 +4,7 @@
 # * Last modified : 2013-12-30 13:01
 # * Filename : primer3_in.pl
 # * Description: It's a script for creating a PRIMER3 input file 
-# *													  based on SSR search results. 
+# *							based on SSR search results. 
 # * *****************************************************************************/
 
 #!/usr/bin/perl
@@ -47,14 +47,14 @@ while (<IN>) {
 		my ($id,$ssr_nr,$size,$start) = ($t[0],$t[1],$t[4],$t[5]);
 		my $seq = ${$seq_hash{$id}};
 		print OUT "SEQUENCE_ID=$id"."_$ssr_nr\nSEQUENCE_TEMPLATE=$seq\n";
-    	print OUT "PRIMER_PRODUCT_SIZE_RANGE=100-300\n";
-    	print OUT "PRIMER_MIN_SIZE=18\n";
-    	print OUT "PRIMER_MAX_SIZE=25\n";
-    	print OUT "PRIMER_MAX_GC=60.0\n";
-    	print OUT "PRIMER_MIN_GC=40.0\n";
-    	print OUT "PRIMER_MAX_POLY_X=2\n";
-    	print OUT "SEQUENCE_TARGET=",$start-3,",",$size+6,"\n";
-    	print OUT "PRIMER_MAX_END_STABILITY=9.0\n=\n"
+    		print OUT "PRIMER_PRODUCT_SIZE_RANGE=100-300\n";
+    		print OUT "PRIMER_MIN_SIZE=18\n";
+    		print OUT "PRIMER_MAX_SIZE=25\n";
+    		print OUT "PRIMER_MAX_GC=60.0\n";
+    		print OUT "PRIMER_MIN_GC=40.0\n";
+    		print OUT "PRIMER_MAX_POLY_X=2\n";
+    		print OUT "SEQUENCE_TARGET=",$start-3,",",$size+6,"\n";
+    		print OUT "PRIMER_MAX_END_STABILITY=9.0\n=\n"
 	}
 }
 
