@@ -30,7 +30,7 @@ $filename =~ s/\.misa//;
 open (FH,"<$ARGV[1]") || die ("\nError: Couldn't open source file containing original FASTA sequences !\n\n");
 open (OUT,">$filename.p3in");
 
-my %hash;
+my %seq_hash;
 my $i_seq = Bio::SeqIO->new( -format => 'Fasta', -fh => \*FH );
 while((my $seq_obj = $i_seq->next_seq())){
     my $id  = $seq_obj->id;
@@ -43,7 +43,7 @@ close FH;
 
 while (<IN>) {
 	my @t = split;
-	if (exists $hash{$t[0]}) {
+	if (exists $seq_hash{$t[0]}) {
 		my ($id,$ssr_nr,$size,$start) = ($t[0],$t[1],$t[4],$t[5]);
 		my $seq = ${$seq_hash{$id}};
 		print OUT "SEQUENCE_ID=$id"."_$ssr_nr\nSEQUENCE_TEMPLATE=$seq\n";
