@@ -7,6 +7,8 @@
 # *							based on SSR search results. 
 # * *****************************************************************************/
 
+## See http://pgrc.ipk-gatersleben.de/misa/	
+
 #!/usr/bin/perl
 use Bio::SeqIO;
 use Data::Dumper;
