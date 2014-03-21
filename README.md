@@ -1,4 +1,4 @@
 Bioinformatics
 ==============
 
-Useful script for NGS analysis
+Some useful scripts for NGS analysis.
