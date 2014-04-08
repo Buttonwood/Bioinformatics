@@ -36,6 +36,14 @@ def print_list_tuple(lt):
 		s += repr(x)+","+repr(y)+";"
 	return s
 
+"""
+def find_overlap(at,bt):
+    (a,b) = at
+    (c,d) = bt
+    l1 = abs(b-a) + 1
+    l2 = abs(d-c) + 1
+"""
+
 def get_st_ed_list_tuple(lt):
 	# l = [(1, 3), (2, 3), (3, 8), (5, 7), (7, 9)]
 	# get_st_ed_list_tuple(l) will return [1,9]

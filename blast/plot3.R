@@ -1,6 +1,6 @@
 #=============================================================================
 #     FileName: plot.R
-#         Desc: 
+#         Desc: A short script for hist barplot and pareto cumulated frequency.
 #       Author: tanhao
 #        Email: tanhao2013@gmail.com
 #     HomePage: http://buttonwood.github.io
@@ -8,6 +8,8 @@
 #   LastChange: 2014-03-20 14:35:48
 #      History:
 #=============================================================================
+#!/usr/local/bin/Rscript --slave
+
 barplot_with_pareto <- function(x, main="", xlab="Indentity(%)", r=100, s=5) {
 	op <- par(mar = c(5, 4, 4, 5) + 0.1, las = 2)
 	

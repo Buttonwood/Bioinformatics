@@ -1,0 +1,1639 @@
+?print()
+data<-read.table("/Users/buttonwood/Downloads/survey.txt")
+plot(data[,1],data[,2])
+plot(data[,3:100],data[,3:100])
+plot(data[3:100,1]],data[3:100,2])
+plot(data[c(3:100),1]],data[c(3:100),2])
+plot(data[,1]],data[,2])
+plot(data[,1],data[,2])
+plot(data[3:100,1],data[3:100,2])
+X <- c(1)#
+Y <- c(1)#
+#
+DF <- as.data.frame(cbind(X,Y))#
+c.1 <-  ggplot(data = DF) + geom_bar(aes(x = X, y = Y, fill = factor(X)))  + coord_flip()   +  theme(legend.position="none") + labs(x="", y="", title="One Colour") + scale_y_continuous(breaks=NULL, expand=c(0,0)) + scale_x_continuous(breaks=NULL, expand=c(0,0))#
+#
+X <- c(1:2)#
+Y <- rep(1, length(X))#
+DF <- as.data.frame(cbind(X,Y))#
+c.2 <- ggplot(data = DF) + geom_bar(aes(x = X, y = Y, fill = factor(X)))   + coord_flip()   +  theme(legend.position="none")   + labs(x="", y="", title="Two Colours")           + scale_y_continuous(breaks=NULL, expand=c(0,0)) + scale_x_continuous(breaks=NULL, expand=c(0,0))#
+#
+X <- c(1:3)#
+Y <- rep(1, length(X))#
+DF <- as.data.frame(cbind(X,Y))#
+c.3 <- ggplot(data = DF) + geom_bar(aes(x = X, y = Y, fill = factor(X)))  + coord_flip()   +  theme(legend.position="none")    + labs(x="", y="", title="Three Colours")     + scale_y_continuous(breaks=NULL, expand=c(0,0)) + scale_x_continuous(breaks=NULL, expand=c(0,0))#
+#
+X <- c(1:4)#
+Y <- rep(1, length(X))#
+DF <- as.data.frame(cbind(X,Y))#
+c.4 <- ggplot(data = DF) + geom_bar(aes(x = X, y = Y, fill = factor(X)))   + coord_flip()   +  theme(legend.position="none")+ labs(x="", y="", title="Four Colours")   + scale_y_continuous(breaks=NULL, expand=c(0,0)) + scale_x_continuous(breaks=NULL, expand=c(0,0))#
+#
+X <- c(1:5)#
+Y <- rep(1, length(X))#
+DF <- as.data.frame(cbind(X,Y))#
+c.5 <- ggplot(data = DF) + geom_bar(aes(x = X, y = Y, fill = factor(X)))   + coord_flip()   +  theme(legend.position="none")   + labs(x="", y="", title="Five Colours")    + scale_y_continuous(breaks=NULL, expand=c(0,0)) + scale_x_continuous(breaks=NULL, expand=c(0,0))#
+#
+X <- c(1:6)#
+Y <- rep(1, length(X))#
+DF <- as.data.frame(cbind(X,Y))#
+c.6 <- ggplot(data = DF) + geom_bar(aes(x = X, y = Y, fill = factor(X)))   + coord_flip()   +  theme(legend.position="none")  + labs(x="", y="", title="Six Colours")  + scale_y_continuous(breaks=NULL, expand=c(0,0)) + scale_x_continuous(breaks=NULL, expand=c(0,0))#
+#
+X <- c(1:7)#
+Y <- rep(1, length(X))#
+DF <- as.data.frame(cbind(X,Y))#
+c.7 <- ggplot(data = DF) + geom_bar(aes(x = X, y = Y, fill = factor(X)))   + coord_flip()   +  theme(legend.position="none")   + labs(x="", y="", title="Seven Colours")  + scale_y_continuous(breaks=NULL, expand=c(0,0)) + scale_x_continuous(breaks=NULL, expand=c(0,0))#
+X <- c(1:8)#
+Y <- rep(1, length(X))#
+DF <- as.data.frame(cbind(X,Y))#
+c.8 <- ggplot(data = DF) + geom_bar(aes(x = X, y = Y, fill = factor(X)))   + coord_flip()   +  theme(legend.position="none")  + labs(x="", y="", title="Eight Colours")   + scale_y_continuous(breaks=NULL, expand=c(0,0)) + scale_x_continuous(breaks=NULL, expand=c(0,0))#
+#
+MfrowGG <- grid.arrange(c.1, c.2, c.3, c.4, c.5,#
+                         c.6, c.7, c.8, ncol=2)
+(4337156-2)/2
+4337156/2 + 3166172/4 + 2957544/4
+x<-c(622#
+ 180#
+ 240#
+ 175#
+ 596#
+ 119#
+ 463#
+  63#
+ 180#
+ 110#
+ 115#
+  41#
+ 255#
+ 177#
+ 209#
+ 696#
+ 468#
+ 184#
+   7#
+ 125#
+ 210#
+ 654#
+ 374#
+   3#
+ 515#
+ 259#
+ 408#
+  38#
+ 550#
+ 234#
+ 110#
+ 199#
+ 297#
+ 153#
+   5#
+ 568#
+  75#
+ 222#
+ 260#
+  16#
+ 611#
+ 219#
+  33#
+  63#
+  19#
+   1#
+  73#
+ 700#
+ 420#
+ 621#
+ 397#
+  85#
+  69#
+  48#
+  82#
+ 315#
+  28#
+ 573#
+ 261#
+ 161#
+ 410#
+  57#
+ 111#
+ 165#
+ 158#
+ 399#
+ 482#
+ 136#
+ 243#
+ 123#
+ 202#
+ 449#
+  78#
+  17#
+  88#
+  46#
+ 262#
+ 603#
+  70#
+ 536#
+  56#
+   9#
+ 266#
+ 154#
+ 644#
+ 188#
+  24#
+ 594#
+ 506#
+ 608#
+  40#
+ 184#
+ 191#
+ 247#
+ 390#
+  12#
+  96#
+ 561#
+ 494#
+ 599#
+ 152#
+  64#
+  91#
+ 261#
+ 423#
+ 187#
+ 189#
+ 574#
+ 374#
+ 565#
+ 108#
+ 139#
+ 192#
+ 675#
+   2#
+ 634#
+ 587#
+ 307#
+ 233#
+  72#
+ 258#
+ 446#
+ 488#
+ 221#
+ 426#
+ 378#
+ 471#
+ 108#
+ 509#
+ 167#
+ 299#
+  97#
+ 616#
+ 331#
+ 323#
+ 264#
+ 194#
+ 640#
+ 182#
+ 117#
+ 208#
+ 344#
+ 665#
+ 277#
+ 156#
+ 308#
+ 417#
+ 649#
+  38#
+ 617#
+ 330#
+  28#
+ 259#
+ 127#
+ 205#
+ 270#
+ 160#
+ 223#
+ 165#
+ 679#
+ 499#
+ 456#
+ 353#
+ 264#
+ 269#
+ 147#
+ 254#
+ 298#
+  79#
+ 321#
+ 322#
+ 654#
+  95#
+ 260#
+ 173#
+ 173#
+ 193#
+ 496#
+  59#
+ 198#
+ 407#
+   0#
+  77#
+ 238#
+  24#
+ 178#
+ 315#
+ 241#
+  73#
+ 220#
+ 213#
+ 550#
+ 130#
+  29#
+   5#
+ 238#
+ 626#
+ 600#
+ 128#
+ 133#
+ 148#
+ 337#
+ 464#
+ 116#
+  75#
+ 173#
+ 386#
+ 459#
+ 169#
+ 231#
+ 597#
+ 217#
+ 313#
+ 494#
+  43#
+  65#
+ 259#
+ 306#
+ 677#
+ 113#
+ 451#
+ 219#
+ 283#
+  20#
+ 219#
+ 176#
+ 656#
+   4#
+ 164#
+ 109#
+ 575#
+ 128#
+  13#
+ 478#
+ 246#
+ 530#
+  40#
+ 439#
+ 663#
+ 507#
+  17#
+ 157#
+  20#
+ 677#
+ 377#
+ 600#
+ 134#
+  33#
+ 133#
+   2#
+   3#
+ 270#
+ 232#
+ 664#
+ 143#
+ 495#
+  65#
+ 627#
+  19#
+ 183#
+ 658#
+ 219#
+ 199#
+ 191#
+ 399#
+ 612#
+ 317#
+ 538#
+ 111#
+ 300#
+ 123#
+ 430#
+ 154#
+ 245#
+ 674#
+ 314#
+ 225#
+ 107#
+ 186#
+ 465#
+ 439#
+ 561#
+  13#
+ 399#
+ 171#
+ 221#
+ 202#
+ 654#
+ 622#
+ 126#
+ 242#
+  21#
+  41#
+ 168#
+ 100#
+ 497#
+ 319#
+ 193#
+ 456#
+  28#
+  24#
+ 315#
+ 689#
+ 682#
+ 440#
+  82#
+ 490#
+ 284#
+ 344#
+ 346#
+ 172#
+  61#
+ 510#
+ 524#
+  98#
+ 213#
+ 361#
+ 275#
+ 223#
+ 178#
+ 156#
+ 183#
+  16#
+ 581#
+ 365#
+ 266#
+ 686#
+ 592#
+ 629#
+  93#
+  78#
+ 385#
+ 277#
+ 259#
+ 576#
+ 402#
+ 551#
+ 127#
+ 357#
+ 320#
+ 197#
+  58#
+ 150#
+  55#
+ 207#
+ 202#
+ 133#
+ 355#
+ 628#
+ 228#
+ 460#
+ 246#
+ 569#
+ 167#
+ 501#
+ 241#
+ 297#
+  61#
+  18#
+ 217#
+ 311#
+ 121#
+ 248#
+ 526#
+  32#
+ 163#
+  55#
+ 443#
+ 124#
+  30#
+ 521#
+ 163#
+ 178#
+ 264#
+  45#
+  77#
+ 294#
+  31#
+ 213#
+ 691#
+ 249#
+ 126#
+ 676#
+ 623#
+ 211#
+ 347#
+ 280#
+ 359#
+  78#
+  99#
+ 283#
+ 472#
+  58#
+ 168#
+ 169#
+ 647#
+ 375#
+ 520#
+ 442#
+ 508#
+ 142#
+ 594#
+  43#
+ 383#
+ 147#
+ 161#
+ 218#
+ 617#
+ 422#
+ 643#
+ 101#
+ 139#
+ 532#
+ 282#
+ 642#
+ 567#
+ 436#
+ 464#
+ 621#
+ 365#
+ 643#
+  15#
+ 291#
+ 141#
+  18#
+ 410#
+ 577#
+  13#
+ 120#
+ 131#
+ 263#
+  27#
+  22#
+ 159#
+ 399#
+  16#
+  72#
+ 660#
+ 395#
+ 557#
+ 514#
+ 586#
+ 498#
+  24#
+ 399#
+ 699#
+ 252#
+ 530#
+  88#
+ 145#
+ 393#
+ 252#
+ 130#
+  69#
+ 200#
+  13#
+ 265#
+ 176#
+ 508#
+ 268#
+ 123#
+ 339#
+ 455#
+ 606#
+ 308#
+ 302#
+ 338#
+ 156#
+ 178#
+ 689#
+ 148#
+ 201#
+ 511#
+ 185#
+ 125#
+ 178#
+ 138#
+ 209#
+ 115#
+ 154#
+ 235#
+ 494#
+ 277#
+ 696#
+  30#
+ 468#
+ 506#
+  73#
+  26#
+  52#
+ 166#
+ 113#
+ 270#
+ 671#
+  53#
+  45#
+ 521#
+ 396#
+ 324#
+  17#
+ 335#
+ 124#
+ 698#
+ 419#
+ 398#
+ 271#
+ 156#
+ 353#
+ 662#
+ 447#
+  61#
+ 268#
+ 136#
+  19#
+  90#
+  73#
+ 100#
+ 297#
+ 343#
+ 429#
+  24#
+ 116#
+ 332#
+ 260#
+ 262#
+ 221#
+ 481#
+  14#
+  95#
+  57#
+ 358#
+ 424#
+  66#
+ 215#
+  12#
+   9#
+ 430#
+  63#
+ 493#
+ 592#
+ 339#
+ 416#
+  35#
+  64#
+ 218#
+  65#
+  58#
+  70#
+ 536#
+ 499#
+  47#
+ 362#
+  98#
+ 363#
+ 636#
+  60#
+ 326#
+ 392#
+ 680#
+ 227#
+ 455#
+ 291#
+ 414#
+ 248#
+ 306#
+ 366#
+ 590#
+ 578#
+ 193#
+ 575#
+ 699#
+ 586#
+ 109#
+  11#
+ 531#
+ 656#
+  65#
+ 288#
+ 523#
+ 269#
+ 207#
+ 675#
+ 614#
+ 264#
+ 670#
+ 159#
+ 116#
+ 584#
+  50#
+ 245#
+  28#
+ 242#
+   6#
+ 507#
+   6#
+ 207#
+ 347#
+ 127#
+ 602#
+ 518#
+  79#
+  27#
+ 476#
+ 466#
+ 274#
+ 555#
+ 240#
+ 282#
+ 326#
+  54#
+ 388#
+ 166#
+ 126#
+  12#
+ 362#
+  30#
+ 484#
+ 104#
+ 529#
+ 163#
+ 636#
+ 167#
+ 152#
+ 111#
+ 619#
+ 692#
+ 689#
+ 306#
+ 636#
+ 299#
+ 613#
+ 605#
+ 130#
+  71#
+  46#
+ 689#
+ 277#
+ 493#
+ 547#
+  61#
+ 582#
+  96#
+ 556#
+  62#
+  13#
+ 131#
+ 129#
+ 273#
+ 652#
+ 240#
+ 652#
+ 215#
+  69#
+ 627#
+ 420#
+ 555#
+  23#
+ 253#
+  70#
+ 524#
+ 412#
+ 218#
+ 394#
+ 481#
+ 115#
+ 173#
+ 102#
+   2#
+ 575#
+  33#
+ 262#
+ 647#
+ 390#
+ 686#
+ 341#
+ 582#
+ 175#
+ 255#
+  98#
+ 260#
+ 689#
+ 538#
+ 128#
+ 319#
+ 164#
+ 186#
+ 413#
+ 383#
+ 131#
+ 587#
+ 344#
+ 445#
+ 183#
+ 331#
+ 313#
+ 462#
+ 494#
+ 685#
+ 366#
+  48#
+ 639#
+ 110#
+   2#
+ 205#
+ 209#
+ 109#
+ 295#
+ 624#
+ 412#
+ 521#
+ 109#
+ 598#
+ 641#
+ 211#
+ 216#
+ 545#
+ 411#
+  35#
+ 325#
+ 686#
+ 395#
+  49#
+ 244#
+ 308#
+ 163#
+ 252#
+  42#
+ 591#
+   2#
+ 119#
+ 614#
+ 235#
+ 188#
+ 276#
+  49#
+  46#
+ 280#
+ 680#
+  88#
+  98#
+ 227#
+ 182#
+   6#
+ 355#
+   3#
+ 634#
+  86#
+ 512#
+ 228#
+ 649#
+ 201#
+ 192#
+ 574#
+ 286#
+ 282#
+  53#
+ 288#
+ 241#
+ 370#
+  69#
+ 220#
+ 206#
+ 672#
+  60#
+ 127#
+  38#
+ 129#
+  77#
+  61#
+ 505#
+ 171#
+  30#
+  36#
+ 160#
+ 561#
+ 542#
+ 193#
+ 173#
+ 384#
+ 459#
+  36#
+  45#
+ 602#
+ 510#
+ 369#
+  28#
+ 452#
+  90#
+ 682#
+ 283#
+ 103#
+ 504#
+ 111#
+ 641#
+  79#
+ 251#
+  97#
+ 685#
+ 394#
+ 579#
+ 276#
+ 518#
+ 303#
+ 111#
+ 162#
+ 266#
+ 246#
+ 685#
+ 698#
+  20#
+ 106#
+ 318#
+ 428#
+ 293#
+  85#
+ 626#
+ 386#
+ 354#
+ 134#
+ 183#
+ 225#
+ 146#
+ 683#
+ 142#
+ 275#
+ 699#
+ 249#
+ 447#
+   1#
+ 579#
+  76#
+  14#
+ 501#
+ 118#
+ 229#
+ 245#
+  46#
+  61#
+  53#
+ 615#
+ 675#
+ 308#
+ 632#
+ 176#
+ 538#
+ 456#
+ 482#
+ 381#
+ 324#
+ 124#
+  87#
+  72#
+ 266#
+ 281#
+ 405#
+ 148#
+ 508#
+ 268#
+ 413#
+ 564#
+ 358#
+ 627#
+ 559#
+ 235#
+ 203#
+ 134#
+ 149#
+ 581#
+ 507#
+ 112#
+ 140#
+ 277#
+ 261#
+  86#
+ 365#
+   4#
+ 243#
+ 351#
+  82#
+ 258#
+ 297#
+ 501#
+  72#
+ 460#
+ 210#
+ 313#
+ 161#
+ 594#
+ 135#
+ 345#
+ 697#
+ 580#
+ 183#
+ 461#
+   6#
+ 185#
+ 509#
+ 274#
+ 165#
+ 275#
+ 365#
+ 306#
+ 178#
+ 167#
+ 376#
+ 397#
+ 667#
+ 220#
+ 316#
+  82#
+ 493#
+  20#
+ 231#
+ 209#
+ 306#
+ 485#
+ 273#
+  32#
+  18#
+  23#
+   4#
+ 674#
+ 548#
+ 590#
+ 106#
+ 201#
+ 519#
+ 179#
+ 682#
+ 254#
+ 226#
+  18#
+ 326#
+ 411#
+ 413#
+ 335#
+ 173#
+ 125#
+ 131#
+ 249#
+ 546#
+ 478#
+ 105#
+ 171#
+  15#
+ 290#
+ 555#
+ 418#
+ 292#
+ 178#
+ 615#
+ 176#
+ 162#
+ 204#
+ 194#
+ 344#
+ 334#
+ 109#
+ 223#
+ 348#
+ 162#
+ 226#
+ 385#
+ 236#
+ 660#
+  61#
+  65#
+ 113#
+ 634#
+ 611#
+  43#
+ 435#
+ 353#
+ 296#
+  71#
+  32#
+ 342#
+ 347#
+ 612#
+ 278#
+ 540#
+ 188#
+ 543#
+ 245#
+  60#
+ 134#
+ 558#
+ 542#
+  74#
+  20#
+ 631#
+ 310#
+ 669#
+ 275#
+ 279#
+ 612#
+  32#
+ 402#
+ 109#
+ 167)#
+ mean(x)
+x<-c( 101,#
+ 533,#
+ 273,#
+ 298,#
+ 205,#
+ 306,#
+ 611,#
+ 507,#
+ 516,#
+  66,#
+ 227,#
+ 353,#
+ 196,#
+ 447,#
+ 293,#
+  74,#
+ 200,#
+ 433,#
+ 287,#
+  88,#
+ 274,#
+ 646,#
+ 126,#
+  16,#
+ 108,#
+ 205,#
+ 192,#
+  23,#
+ 494,#
+ 240,#
+ 158,#
+ 228,#
+ 207,#
+ 130,#
+  49,#
+ 586,#
+  76,#
+ 249,#
+  32,#
+ 338,#
+  82,#
+  76,#
+ 219,#
+ 327,#
+ 323,#
+  14,#
+ 363,#
+  31,#
+  84,#
+ 378,#
+ 259,#
+ 122,#
+  43,#
+  66,#
+  27,#
+ 574,#
+  84,#
+ 120,#
+ 250,#
+ 101,#
+ 362,#
+ 690,#
+ 157,#
+ 626,#
+ 234,#
+   4,#
+ 293,#
+ 282,#
+  24,#
+ 186,#
+ 102,#
+ 684,#
+ 267,#
+ 573,#
+   1,#
+ 133,#
+  29,#
+ 253,#
+  27,#
+ 484,#
+ 438,#
+ 114,#
+ 583,#
+ 626,#
+ 304,#
+ 145,#
+ 435,#
+  15,#
+ 220,#
+ 158,#
+ 512,#
+ 367,#
+  86,#
+ 658,#
+ 521,#
+  12,#
+ 297,#
+  55,#
+ 131,#
+ 157)
+mean(x)
+std(x)
+summary(x)
+x<-c( 152,#
+ 573,#
+ 559,#
+ 400,#
+ 360,#
+  91,#
+ 576,#
+ 297,#
+ 592,#
+ 456,#
+ 339,#
+  66,#
+  52,#
+ 114,#
+ 471,#
+ 110,#
+ 535,#
+ 493,#
+  25,#
+ 208,#
+ 244,#
+ 326,#
+ 216,#
+ 210,#
+ 492,#
+ 429,#
+ 529,#
+ 160,#
+  50,#
+ 253,#
+ 454,#
+ 324,#
+ 531,#
+ 396,#
+ 146,#
+ 241,#
+ 449,#
+ 452,#
+  16,#
+ 139,#
+ 165,#
+ 361,#
+ 455,#
+ 466,#
+ 594,#
+ 575,#
+ 593,#
+  78,#
+ 600,#
+  47,#
+ 414,#
+ 488,#
+ 243,#
+ 271,#
+ 158,#
+ 347,#
+ 353,#
+ 235,#
+ 246,#
+ 345,#
+ 271,#
+ 442,#
+ 299,#
+ 547,#
+ 297,#
+ 224,#
+ 486,#
+ 510,#
+ 237,#
+ 415,#
+ 471,#
+ 374,#
+ 153,#
+ 578,#
+  92,#
+ 202,#
+ 429,#
+ 286,#
+  70,#
+  39,#
+ 267,#
+ 551,#
+  83,#
+  43,#
+  68,#
+ 281,#
+  29,#
+ 208,#
+ 312,#
+ 133,#
+  97,#
+ 307,#
+   6,#
+ 163,#
+ 206,#
+ 374,#
+ 457,#
+ 578,#
+ 507,#
+ 170)
+summary(x)
+x<-c(515,#
+ 510,#
+ 364,#
+ 452,#
+ 372,#
+ 399,#
+ 433,#
+ 542,#
+ 464,#
+ 512,#
+ 542,#
+ 455,#
+ 487,#
+ 521,#
+ 484,#
+ 303,#
+ 452,#
+ 483,#
+ 482,#
+ 425,#
+ 392,#
+ 490,#
+ 322,#
+ 428,#
+ 518,#
+ 411,#
+ 476,#
+ 405,#
+ 510,#
+ 474,#
+ 431,#
+ 428,#
+ 417,#
+ 439,#
+ 426,#
+ 430,#
+ 408,#
+ 432,#
+ 405,#
+ 394,#
+ 459,#
+ 592,#
+ 442,#
+ 473,#
+ 485,#
+ 478,#
+ 455,#
+ 428,#
+ 439,#
+ 462,#
+ 469,#
+ 543,#
+ 503,#
+ 347,#
+ 432,#
+ 365,#
+ 498,#
+ 443,#
+ 442,#
+ 437,#
+ 401,#
+ 472,#
+ 498,#
+ 426,#
+ 419,#
+ 435,#
+ 448,#
+ 483,#
+ 424,#
+ 467,#
+ 538,#
+ 468,#
+ 439,#
+ 508,#
+ 468,#
+ 524,#
+ 380,#
+ 499,#
+ 325,#
+ 427,#
+ 366,#
+ 530,#
+ 440,#
+ 458,#
+ 450,#
+ 376,#
+ 432,#
+ 413,#
+ 403,#
+ 333,#
+ 393,#
+ 481,#
+ 519,#
+ 437,#
+ 462,#
+ 404,#
+ 417,#
+ 412,#
+ 460,#
+ 389)
+summary(x)
+set.seed(1)#
+x <- seq(-10, 10, by = 0.01) y <- 1 - ^ 2 + rnorm(length(x), 0, 5) #
+ggplot(data.frame(X = x, Y = y), aes(x = X, y = Y)) + geom_point() + geom_smooth(se = FALSE)
+set.seed(1)#
+library(ggplot)#
+x <- seq(-10, 10, by = 0.01) y <- 1 - ^ 2 + rnorm(length(x), 0, 5) #
+ggplot(data.frame(X = x, Y = y), aes(x = X, y = Y)) + geom_point() + geom_smooth(se = FALSE)
+doInstall <- TRUE  # Change to FALSE if you don't want packages installed.#
+toInstall <- c("ggplot2")#
+if(doInstall){install.packages(toInstall, repos = "http://cran.r-project.org")}#
+lapply(toInstall, library, character.only = TRUE)#
+# Generate some randomly-distributed data#
+nObs <- 5000#
+myData <- data.frame(X = rnorm(nObs), Y = rnorm(nObs))#
+nClusters <- 7  # Cluster it#
+kMeans <- kmeans(myData, centers = nClusters)#
+myData$Cluster <- as.factor(kMeans$cluster)#
+# Plot points colored by cluster#
+zp1 <- ggplot(myData,#
+              aes(x = X, y = Y, colour = Cluster))#
+zp1 <- zp1 + geom_point()#
+print(zp1)#
+# Illustration of stat_density2d, encoding density into alpha#
+zp2 <- ggplot(myData,#
+              aes(x = X, y = Y))#
+zp2 <- zp2 + stat_density2d(aes(fill = Cluster, colour = Cluster,#
+                                alpha = ..level..),#
+                            geom = "polygon")#
+zp2 <- zp2 + scale_alpha(range = c(0, 1/2), guide = "none")  # Narrow alpha range#
+zp2 <- zp2 + coord_equal()#
+print(zp2)#
+# Illustration of stat_density2d, encoding density into linewidth#
+zp3 <- ggplot(myData,#
+              aes(x = X, y = Y))#
+zp3 <- zp3 + stat_density2d(aes(colour = Cluster,#
+                                size = ..level..),#
+                            fill = "transparent",#
+                            geom = "polygon")#
+zp3 <- zp3 + scale_size(range = c(0, 2), guide = "none")  # Narrow size/linewidth range#
+zp3 <- zp3 + coord_equal()#
+print(zp3)#
+# Combination of both#
+zp4 <- ggplot(myData,#
+              aes(x = X, y = Y))#
+zp4 <- zp4 + stat_density2d(aes(fill = Cluster, colour = Cluster,#
+                                alpha = ..level..,#
+                                size = ..level..),#
+                            geom = "polygon")#
+zp4 <- zp4 + scale_alpha(range = c(0, 1/2), guide = "none")  # Narrow alpha range#
+zp4 <- zp4 + scale_size(range = c(0, 3/2), guide = "none")  # Narrow size/linewidth range#
+zp4 <- zp4 + coord_equal()#
+print(zp4)
+Transforming a color scale#
+doInstall <- TRUE  # Change to FALSE if you don't want packages installed.#
+toInstall <- c("ggplot2", "RColorBrewer", "scales")#
+if(doInstall){install.packages(toInstall, repos = "http://cran.us.r-project.org")}#
+lapply(toInstall, library, character.only = TRUE)#
+# Generate some data#
+nn <- 10000#
+myData <- data.frame(X = rnorm(nn),#
+                     Y = rnorm(nn))#
+myData$Z <- with(myData, X * Y)#
+# Make a standard scatterplot with Z encoded into point colour#
+zp1 <- ggplot(myData,#
+              aes(x = X, y = Y, colour = Z))#
+zp1 <- zp1 + geom_point()#
+zp1 <- zp1 + theme_bw()#
+zp1 <- zp1 + coord_equal()#
+zp1 <- zp1 + scale_colour_gradientn(colours = colorRampPalette(rev(brewer.pal(11, "Spectral")))(1000),#
+                                    breaks = c(-2:2 * 2))#
+zp1 <- zp1 + ggtitle("Untransformed")#
+print(zp1)#
+# Define a transformation#
+norm_trans <- function(){#
+  trans_new('norm', function(x) pnorm(x), function(x) qnorm(x))#
+  }#
+# Apply transformed colour scale#
+zp2 <- zp1 + scale_colour_gradientn(colours = colorRampPalette(rev(brewer.pal(11, "Spectral")))(1000),#
+                                    trans = 'norm',  # Apply the transformation here#
+                                    breaks = c(-2:2))  # Note the change in breaks#
+zp2 <- zp2 + ggtitle("Transformed")#
+print(zp2)
+doInstall <- TRUE#
+toInstall <- c("ggplot2", "cluster", "MASS", "smacof")#
+if(doInstall){install.packages(toInstall, repos = "http://cran.us.r-project.org")}#
+lapply(toInstall, library, character.only = TRUE)#
+# Generate a matrix of dissimilarities from pairwise correlations#
+data(breakfast)  # Preference orderings of breakfast items, from smacof#
+corrMat <- cor(breakfast, use = "pair")#
+distMat <- dist(corrMat)#
+# Fuzzy analysis clustering of breakfast items#
+FANNY <- fanny(distMat, k = 3, maxit = 2000)#
+FANNY$membership#
+MDS <- smacofSym(distMat)$conf#
+plot(MDS, type = "n")#
+text(MDS, label = rownames(MDS), col = rgb((FANNY$membership)^(1/1)))#
+# From http://stackoverflow.com/a/7661309/479554#
+labelFrame <- data.frame(X = MDS[, 1], Y = MDS[, 2], Label = rownames(MDS))#
+labelFrame <- transform(labelFrame,#
+                        w = strwidth(rownames(MDS))*1,#
+                        h = strheight(rownames(MDS))*1.5)#
+labelFrame$Color <- rgb((FANNY$membership)^(1/1))#
+zp1 <- ggplot(data = labelFrame,#
+                    aes(x = X, y = Y))#
+zp1 <- zp1 + geom_rect(aes(xmin = X - w/2, xmax = X + w/2, #
+                           ymin = Y - h/2, ymax = Y + h/2,#
+                           fill = Color), alpha = 2/3)#
+zp1 <- zp1 + geom_text(aes(x = X, y = Y, label = Label),#
+                       size = 3, colour = "WHITE")#
+zp1 <- zp1 + scale_fill_identity()#
+zp1 <- zp1 + theme_classic()#
+print(zp1)
+c(1,5)
+c(1,5)*c(1,2)
+c(1,5,7)*c(1,2,3)
+3746559/6781271
+(6749503-3746559)/6781271
+2592793/4404359
+(4353435-2592793)/4404359
+2608520/4278263
+(4220892-2608520)/4278263
+quit()
+install.packages("ggtern")
+library("ggplot2")
+install.packages("ggplot2")
+library("ggplot2")
+DATA <- data.frame(A=runif(100),B=runif(100),C=runif(100))
+DATA
+plot <- ggtern(data=DATA,mapping=aes(x=A,y=B,z=C)) + geom_point()
+library("ggtern")
+install.packages("ggtern")
+plot<-ggplot(data=DATA,mapping=aes(x=A,y=B,z=C)) + geom_point()
+plot
+install.packages("ggtern")
+exit()
+exit
+quit
+quit()
+rep(1,36)
+h=0:35/36
+h
+hsv(h)
+?hsv()
+hsv(.5,.5,.5)
+hsv(.5)
+rep(1.5, 4)
+n <- 20;  y <- -sin(3*pi*((1:n)-1/2)/n)#
+op <- par(mar = rep(1.5, 4))#
+plot(y, axes = FALSE, frame.plot = TRUE,#
+     xlab = "", ylab = "", pch = 21, cex = 30,#
+     bg = rainbow(n, start = .85, end = .1),#
+     main = "Red tones")#
+par(op)
+rainbow(20, start = .85, end = .1)
+rect(0:11, 0, 1:12, 1, col = hsv(s = 0:11/11))
+dev.off()
+rect(0:11, 0, 1:12, 1, col = hsv(s = 0:11/11))
+plot.new()
+plot.window(xlim=c(0, 12), ylim=c(0,1), asp=1)
+rect(0:11, 0, 1:12, 1, col = hsv(s = 0:11/11))
+rect(0:11, 0, 1:12, 1,col = hsv(h = seq(1/12, 3/12, length=12)))
+?rect()
+rect(100, 300, 125, 350
+)
+rect(100, 300, 125, 350)
+plot.new()
+rect(100, 300, 125, 350)
+rect(100, 400, 125, 450, col = "green", border = "blue") # coloured
+rect(100, 400, 125, 450, col = "green", border = "blue")
+plot.new()
+rect(100, 400, 125, 450, col = "green", border = "blue")
+rect(10, 40, 12,5, 4.5, col = "green", border = "blue")
+plot.new()
+rect(10, 40, 12,5, 4.5, col = "green", border = "blue")
+?ecdf()
+rnorm(20)
+ecdf(rnorm(20))
+plot(ecdf(rnorm(20)))
+plot(ecdf(rnorm(20)),type="l")
+plot(ecdf(rnorm(20)),line="l")
+plot(ecdf(rnorm(20)),type=l)
+plot(ecdf(rnorm(20)),type="l")
+plot(ecdf(rnorm(200))
+)
+plot(ecdf(rnorm(400))
+)
+some.data <- rnorm(10, 4, 1.5)
+some.data
+barplot(some.data)
+names(some.data) <- 1:10
+barplot(some.data)
+some.data
+barplot(some.data,ylim = c(1,7))
+6
+barplot(some.data,ylim = c(1,6))
+?hist
+cd("/Users/Shared/BaiduPan/百度云同步盘/Github/Bioinformatics/blast")
+setwd("/Users/Shared/BaiduPan/百度云同步盘/Github/Bioinformatics/blast")
+pwd
+getwd()
+data <- read.table("rate.tab.best")
+bw <- seq(0,100,5)
+data
+bw
+r1 <- hist(data[,1])
+r1
+r1 <- hist(data[,1],breaks=bw,plot=FALSE)
+r1
+plot(bw,r1$counts,xlab="Indentity(%)",ylab="Counts(%)",type="l",lty=1,col="blue")
+r1
+plot(bw,r1$counts,xlab="Indentity(%)",ylab="Counts(%)",type="l",lty=1,col="blue")
+bw
+plot(bw[1:20],r1$counts,xlab="Indentity(%)",ylab="Counts(%)",type="l",lty=1,col="blue")
+barplot(r1$counts,xlab="Indentity(%)",ylab="Counts(%)",type="l",lty=1,col="blue")
+r1$density
+r1$density()
+r1$density
+cedf(r1$dentity)
+plot(data[,2],data[,4])
+plot(data[,2],data[,3])
+plot(data[,3],data[,4])
+plot(data[,3],data[,5])
+plot(data[,2],data[,4])
+plot(data[,2],data[,4],xlim=c(0,100),ylim=c(0,100))
+boxplot(data[,2],data[,4],xlim=c(0,100),ylim=c(0,100))
+boxplot(data,xlim=c(0,100),ylim=c(0,100))
+boxplot(data)
+barplot(r1$counts,xlab="Indentity(%)",ylab="Counts(%)",type="l",lty=1,col="blue")
+r1$counts
+?boxplot()
+plot(ecdf(r1$counts))
+install.packages("sROC")
+library(sROC)
+plot(kCDF(r1$counts))
+kCDF(r1$counts)
+cumsum(r1$counts)
+barplot(r1$counts,xlab="Indentity(%)",ylab="Counts(%)",col="blue")
+?paste()
+paste(seq(0,95,5),seq(5,100,5),sep="--")
+names(r1$counts)
+?barplot
+x<-r1$counts
+names(x) <- paste(seq(0,95,5),seq(5,100,5),sep="--")
+x
+barplot(x)
+x  <- r1$counts#
+y  <- cumsum(x)/sum(x)#
+barplot(x,xlab="Indentity(%)",ylab="Counts(%)",col="blue")#
+xn <- paste(seq(0,95,5),seq(5,100,5),sep="--")#
+names(x) <- xn#
+par(new = T)#
+plot(y, type="l", col="black", axes=FALSE,xlab='', ylab='', main='')#
+axis(4)#
+par(las=0)#
+mtext("Cumulated frequency", side=4, line=3)#
+print(names(x))#
+axis(1, at=1:length(x), labels=names(x))#
+par(op)
+op <- par(mar = c(5, 4, 4, 5) + 0.1, las = 2)#
+x  <- r1$counts#
+y  <- cumsum(x)/sum(x)#
+barplot(x,xlab="Indentity(%)",ylab="Counts(%)",col="blue")#
+xn <- paste(seq(0,95,5),seq(5,100,5),sep="--")#
+names(x) <- xn#
+par(new = T)#
+plot(y, type="l", col="black", axes=FALSE,xlab='', ylab='', main='')#
+axis(4)#
+par(las=0)#
+mtext("Cumulated frequency", side=4, line=3)#
+print(names(x))#
+axis(1, at=1:length(x), labels=names(x))#
+par(op)
+barplot(r1$counts,xlab="Indentity(%)",ylab="Counts(%)",col="pink")
+x < - 3
+a <- 3
+a <- sqrt(a)
+a
+exit()
+quit
+quit()
