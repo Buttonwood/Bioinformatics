@@ -48,7 +48,7 @@ def cout(dic=None):
 			#print dic[k]
 			for x in dic[k]:
 				if x > 0 :
-					print "%.2f" % x,
+					print "%.3f" % x,
 				else:
 					print 0,
 			print

@@ -58,7 +58,7 @@ def main(infile,bin=5000):
 				print ">" + str(name) + "\t" + repr(len(dp))
 				for x in bin_split(dp,bin):
 					if x > 0 :
-						print "%.2f" % x,
+						print "%.3f" % x,
 					else:
 						print 0,
 				print
@@ -76,7 +76,7 @@ def main(infile,bin=5000):
         print ">" + str(name) + "\t" + repr(len(dp))
         for x in bin_split(dp,bin):
             if x > 0:
-                print "%.2f" % x,
+                print "%.3f" % x,
             else:
                 print 0,
         print
